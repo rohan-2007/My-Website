@@ -1,0 +1,134 @@
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    /* color: #0087ca; */
+}
+
+.hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0px;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+h1 {
+    font-size: 30pt;
+    text-align: center;
+}
+#upper_box {
+    /* position: fixed; */
+    height: 15%;
+    width: 100%;
+    padding-top: 0.5%;
+    justify-content: space-around;
+    display: flex;
+    /* padding-bottom: 2%; */
+    background-color: rgb(0, 135, 202);
+    border-color: black;
+    border-width: 5px;
+    border-style: solid;
+}
+
+/* #navbar {
+    position: relative;
+} */
+
+#upper_box_with_navbar {
+    position: sticky;
+    top:0px;
+    z-index: 1;
+}
+
+#logo_image {
+    width: 10%;
+    height: fit-content;
+    float: right;
+}
+#lower_box {
+    height: 50%;
+    display: flex;
+}
+
+.button {
+    height: 100%;
+    width: 33.33%;
+    padding: 0.5%;
+    background-color: rgb(249, 216, 2);
+    outline-color: darkslategray;
+    border-bottom-style: solid;
+    border-bottom-color: black;
+    /* border-width: 5px, 0px, 0px, 5px; */
+    border-bottom-width: 5px;
+    border-left-style: solid;
+    border-left-color: black;
+    border-left-width: 5px;
+    text-align:center;
+}
+#button text {
+    font-size: 20pt;
+    margin: 10%;
+    background-color: #000000;
+}
+#disclaimer{
+    font-size: 15pt;
+    color: green;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+h2 {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+#basic_content_div {
+    width: 50%;
+    margin-left: 5%;
+    margin-right: 5%;
+    float: left;
+}
+.my_picture {
+    width: 10%;
+    height: 20%;
+    border-width: 1%;
+    border-style: solid;
+    border-color: crimson;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+#my_collage {
+    justify-content: space-around;
+}
+#navbar_prompt_div {
+    margin-top: 10%;
+    padding: 4%;
+    border-top-style: solid;
+    border-top-color: crimson;
+    border-top-width: 10%;
+    border-bottom-style: solid;
+    border-bottom-color: crimson;
+    border-bottom-width: 10%;
+}
+#link-to-navbar {
+    text-decoration: none;
+    font-size: 20pt;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: black;
+}
+#link-to-navbar:hover {
+    text-decoration: underline;
+    font-size: 20pt;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: black;
+}
